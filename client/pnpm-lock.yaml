@@ -143,9 +143,6 @@ importers:
       gsap:
         specifier: ^3.12.5
         version: 3.12.5
-      gsap-trial:
-        specifier: ^3.12.5
-        version: 3.12.5
       input-otp:
         specifier: ^1.2.4
         version: 1.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1889,9 +1886,6 @@ packages:
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
-
-  gsap-trial@3.12.5:
-    resolution: {integrity: sha512-Mdq2sLBq6rt9qje/MoF/hRa/xKfvKOUdllPouU2Fhz1K6mpCk0SOGBDhxCrOrJXZ4O7YFFRFVADKIJVeHdKA8A==}
 
   gsap@3.12.5:
     resolution: {integrity: sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==}
@@ -4962,8 +4956,6 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   graphemer@1.4.0: {}
-
-  gsap-trial@3.12.5: {}
 
   gsap@3.12.5: {}
 

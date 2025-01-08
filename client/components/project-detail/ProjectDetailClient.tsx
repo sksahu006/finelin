@@ -25,7 +25,7 @@ export default function ProjectDetailClient({ id }: { id: string }) {
 
   return (
     <>
-      <div className="min-h-screen bg-[#2c2f2f] text-white">
+      <div className="min-h-screen bg-white text-black">
         {/* Hero Section */}
         <div className="relative h-[70vh] w-full">
           <Image
@@ -38,7 +38,7 @@ export default function ProjectDetailClient({ id }: { id: string }) {
           <div className="absolute inset-0 bg-gradient-to-t from-[#2c2f2f] to-transparent" />
           <Link
             href="/"
-            className="absolute top-8 left-8 flex items-center text-white hover:text-[#cfb406] transition-colors"
+            className="absolute top-8 left-8 flex items-center text-black hover:text-[#cfb406] transition-colors"
           >
             <ArrowLeft className="mr-2" />
             Back to Projects
@@ -78,7 +78,7 @@ export default function ProjectDetailClient({ id }: { id: string }) {
                     <div className="bg-yellow-400 w-2 h-8 mr-4"></div>
                     <AnimatedHeading
                       text={project.title}
-                      className="text-[#fcda01] text-4xl tracking-wider font-semibold"
+                      className="text-gray-400 text-4xl tracking-wider font-semibold"
                       delay={0.4}
                     />
                   </div>
@@ -87,12 +87,12 @@ export default function ProjectDetailClient({ id }: { id: string }) {
                 <div className="space-y-2 tracking-wider">
                   <AnimatedHeading
                     text="Writer & Director"
-                    className="text-white text-2xl font-normal"
+                    className="text-black text-2xl font-normal"
                     delay={0.6}
                   />
                   <AnimatedHeading
                     text={project.director || ""}
-                    className="text-gray-400 text-base"
+                    className="text-black text-base"
                     delay={0.7}
                   />
                 </div>
@@ -100,12 +100,12 @@ export default function ProjectDetailClient({ id }: { id: string }) {
                 <div className="space-y-2 tracking-wider">
                   <AnimatedHeading
                     text="Production Company"
-                    className="text-white text-2xl font-normal"
+                    className="text-black text-2xl font-normal"
                     delay={0.8}
                   />
                   <AnimatedHeading
                     text={project.productionCompanies?.join(", ") || ""}
-                    className="text-gray-400 text-base"
+                    className="text-black text-base"
                     delay={0.9}
                   />
                 </div>
@@ -113,12 +113,12 @@ export default function ProjectDetailClient({ id }: { id: string }) {
                 <div className="space-y-2 tracking-wider">
                   <AnimatedHeading
                     text="VFX Supervisor"
-                    className="text-white text-2xl font-normal"
+                    className="text-black text-2xl font-normal"
                     delay={1.0}
                   />
                   <AnimatedHeading
                     text={project.vfxSupervisor || "N/A"}
-                    className="text-gray-400 text-base"
+                    className="text-black text-base"
                     delay={1.1}
                   />
                 </div>
@@ -126,12 +126,12 @@ export default function ProjectDetailClient({ id }: { id: string }) {
                 <div className="space-y-2 tracking-wider">
                   <AnimatedHeading
                     text="VFX Producers"
-                    className="text-white text-2xl font-normal"
+                    className="text-black text-2xl font-normal"
                     delay={1.2}
                   />
                   <AnimatedHeading
                     text={project.vfxProducers?.join(", ") || "N/A"}
-                    className="text-gray-400 text-base"
+                    className="text-black text-base"
                     delay={1.3}
                   />
                 </div>
@@ -150,7 +150,7 @@ export default function ProjectDetailClient({ id }: { id: string }) {
             >
               {/* <AnimatedHeading
                 text="William Tell is written and directed by Nick Hamm, adapted from Friedrich Schiller's world renowned classical play."
-                className="text-[#fcda01] tracking-wider selected:bg-yellow-300 text-2xl font-light leading-9 text-start"
+                className="text-black tracking-wider selected:bg-yellow-300 text-2xl font-light leading-9 text-start"
                 delay={0.2}
               /> */}
             </motion.div>
@@ -163,7 +163,7 @@ export default function ProjectDetailClient({ id }: { id: string }) {
             >
               <AnimatedHeading
                 text="The narrative unfolds in the 14th Century amidst the waning days of the Holy Roman Empire where Europe's nations fiercely vie for supremacy and the ambitious Austrians, desiring more land, encroach upon Switzerland, a serene and pastoral nation."
-                className="text-[#fcda01] tracking-wider selected:bg-yellow-300 text-2xl font-light leading-9 text-start"
+                className="text-black tracking-wider selected:bg-yellow-300 text-2xl font-light leading-9 text-start"
                 delay={0.3}
               />
             </motion.div>
@@ -176,7 +176,7 @@ export default function ProjectDetailClient({ id }: { id: string }) {
             >
               <AnimatedHeading
                 text="Amidst this backdrop, William Tell, a formerly peaceful hunter, finds himself forced to take action as his family and homeland come under dire threat from the oppressive Austrian King and his ruthless warlords. Leading his fellow countrymen, Tell embarks on a courageous rebellion, seeking to defend their liberty and stand against the tyrannical forces that seek to subjugate them."
-                className="text-[#fcda01] tracking-wider selected:bg-yellow-300 text-2xl font-light leading-9 text-start"
+                className="text-black tracking-wider selected:bg-yellow-300 text-2xl font-light leading-9 text-start"
                 delay={0.4}
               />
             </motion.div>

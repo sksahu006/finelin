@@ -53,11 +53,9 @@ export default function Navbar() {
     {
       name: "PORTFOLIO",
       href: "/portfolio",
-        dropdownItems: [
-          { name: "All Projects", href: "/portfolio/all" },
-          { name: "By Industry", href: "/portfolio/industry" },
-          { name: "Client Highlights", href: "/portfolio/highlights" },
-      ],
+      dropdownItems: [ { name: "Video Editing", href: "/portfolio#video-editing" },
+         { name: "Graphic Design", href: "/portfolio#graphic-design" },
+          { name: "VFX", href: "/portfolio#vfx" }, ],
     },
     {
       name: "ABOUT US",
@@ -86,7 +84,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-black/50 h-16" : "bg-black/60 h-28"
       }`}
     >

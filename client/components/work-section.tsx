@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import { projects } from "@/data/projects";
+import { CarouselCustomSizes } from "./HomeCarousel";
 
 export default function WorkSection() {
   const [ref, inView] = useInView({
@@ -44,8 +45,8 @@ export default function WorkSection() {
   };
 
   return (
-    <section className="bg-[#2c2f2f] py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20">
+      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -89,9 +90,12 @@ export default function WorkSection() {
                   </div>
                 </div>
               </motion.div>
-            </Link> 
+            </Link>
           ))}
         </motion.div>
+      </div> */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <CarouselCustomSizes />
       </div>
     </section>
   );

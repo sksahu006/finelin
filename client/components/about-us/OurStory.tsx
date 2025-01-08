@@ -27,7 +27,7 @@ const OurStorySection = () => {
       </div>
 
       {/* Content Section */}
-      <div className="relative bg-[#2e2e2e]  text-white py-16 px-6 md:px-24 grid md:grid-cols-2 gap-10">
+      <div className="relative  text-black py-16 px-6 sm:px-10 md:px-40 grid md:grid-cols-2 gap-10">
         {/* Text Content */}
         <div className="flex flex-col space-y-4">
           <h2 className="text-3xl  font-bold text-yellow-500">
@@ -35,7 +35,7 @@ const OurStorySection = () => {
           </h2>
           <AnimatedHeading
             delay={0.1}
-            className="text-white opacity-80 tracking-wider selection:bg-yellow-300 selection:text-gray-700 text-xl font-[200] leading-9 text-start"
+            className="text-gray-900 opacity-80 tracking-wider selection:bg-yellow-300 selection:text-gray-700 text-xl font-[200] leading-9 text-start"
             text="At FineLin, we specialize in creating powerful visuals that tell your story and leave a lasting impression.With over four years of experience in Graphic Design, Video Editing, 3D Visualization,VFX, Animation, and Product Shoots, we’ve had the privilege of working with startups and established brands across various industries."
           ></AnimatedHeading>
         </div>

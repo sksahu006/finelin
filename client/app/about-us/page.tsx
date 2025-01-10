@@ -16,12 +16,12 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <div>
       <OurStorySection />
-      <VisionValue />
-      <OurTeam />
+      {/* <VisionValue />
+      <OurTeam /> */}
     </div>
   );
 }

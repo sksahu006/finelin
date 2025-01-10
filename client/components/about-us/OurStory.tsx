@@ -12,7 +12,7 @@ const OurStorySection = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://redefine.co/wp-content/uploads/2022/11/OurStory-Banner1.jpg')",
+              "url('Aboutus.png')",
           }}
         >
           <div className="absolute inset-0 bg-black opacity-40"></div>

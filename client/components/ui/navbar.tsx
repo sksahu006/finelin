@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
-    const router = useRouter(); // Initialize useRouter
+  const router = useRouter(); // Initialize useRouter
 
   const handleMouseEnter = (itemName: string) => {
     if (timeoutId) clearTimeout(timeoutId);
@@ -43,36 +43,29 @@ export default function Navbar() {
     {
       name: "SERVICES",
       href: "/services",
-        dropdownItems: [
-            { name: "Graphic", href: "/services/graphic" },
-            { name: "Video", href: "/services/video" },
-            { name: "3D", href: "/services/3d" },
-            { name: "VFX", href: "/services/vfx" },
+      dropdownItems: [
+        { name: "Graphic", href: "/services#graphic" },
+        { name: "Video", href: "/services#video" },
+        { name: "3D", href: "/services#3d" },
+        { name: "VFX", href: "/services#vfx" },
       ],
     },
     {
       name: "PORTFOLIO",
       href: "/portfolio",
-      dropdownItems: [ { name: "Video Editing", href: "/portfolio#video-editing" },
-         { name: "Graphic Design", href: "/portfolio#graphic-design" },
-          { name: "VFX", href: "/portfolio#vfx" }, ],
+      dropdownItems: [
+        { name: "Video Editing", href: "/portfolio#video-editing" },
+        { name: "Graphic Design", href: "/portfolio#graphic-design" },
+        { name: "VFX", href: "/portfolio#vfx" },
+      ],
     },
     {
       name: "ABOUT US",
       href: "/about-us",
-        dropdownItems: [
-          { name: "Our Story", href: "/about-us/our-story" },
-          { name: "Vision & Values", href: "/about-us/vision" },
-          { name: "Team", href: "/about-us/team" },
-      ],
-    },
-    {
-      name: "BLOG",
-      href: "/blog",
-        dropdownItems: [
-          { name: "Video Production", href: "/blog/video" },
-          { name: "3D Modeling", href: "/blog/3d" },
-          { name: "VFX", href: "/blog/vfx" },
+      dropdownItems: [
+        { name: "Our Story", href: "/about-us#our-story" },
+        { name: "Vision & Values", href: "/about-us#vision" },
+        { name: "Team", href: "/about-us#team" },
       ],
     },
     {
@@ -129,7 +122,7 @@ export default function Navbar() {
                     {item.dropdownItems && (
                       <ChevronDown className="ml-1 h-4 w-4" />
                     )}
-                    {item.name !== "CONTACT" &&(
+                    {item.name !== "CONTACT" && (
                       <span className="ml-4 text-gray-400">|</span>
                     )}
                   </Link>
@@ -148,7 +141,7 @@ export default function Navbar() {
                           <Link
                             key={dropdownItem.name}
                             href={dropdownItem.href} // Use the dropdown item's href
-                              className="block px-4 py-2 text-sm text-white hover:text-yellow-400 hover:bg-gray-900"
+                            className="block px-4 py-2 text-sm text-white hover:text-yellow-400 hover:bg-gray-900"
                           >
                             {dropdownItem.name}
                           </Link>
@@ -186,32 +179,32 @@ export default function Navbar() {
                 <button
                   onClick={() =>
                     setActiveDropdown(
-                      activeDropdown === item.name ? null : item.name
+                      activeDropdown === item?.name ? null : item?.name
                     )
                   }
                   className="w-full text-left px-3 py-2 text-white hover:text-yellow-400 transition-colors duration-200 flex items-center justify-between"
                 >
-                  {item.name}
-                  {item.dropdownItems && (
+                  {item?.name}
+                  {item?.dropdownItems && (
                     <ChevronDown
                       className={`h-4 w-4 transition-transform duration-200 ${
-                        activeDropdown === item.name ? "rotate-180" : ""
+                        activeDropdown === item?.name ? "rotate-180" : ""
                       }`}
                     />
                   )}
                 </button>
 
                 {/* Mobile Dropdown */}
-                {item.dropdownItems && activeDropdown === item.name && (
+                {item?.dropdownItems && activeDropdown === item?.name && (
                   <div className="bg-gray-900/50 pl-6">
-                    {item.dropdownItems.map((dropdownItem) => (
+                    {item?.dropdownItems?.map((dropdownItem) => (
                       <Link
-                        key={dropdownItem.name}
-                        href={dropdownItem.href} // Use the dropdown item's href
-                          className="block px-3 py-2 text-sm text-white hover:text-yellow-400"
-                         onClick={() => setIsOpen(false)}
+                        key={dropdownItem?.name}
+                        href={dropdownItem?.href} 
+                        className="block px-3 py-2 text-sm text-white hover:text-yellow-400"
+                        onClick={() => setIsOpen(false)}
                       >
-                        {dropdownItem.name}
+                        {dropdownItem?.name}
                       </Link>
                     ))}
                   </div>

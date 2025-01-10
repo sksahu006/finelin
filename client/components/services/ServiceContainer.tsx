@@ -162,21 +162,21 @@ export default function ServiceContainer() {
 
   return (
     <div ref={container} className="relative">
-      <div className="flex flex-col">
-        {services.map(({ Component, id }, index) => (
-          <section
-            key={id}
-            ref={(el) => {
-              sectionsRef.current[index] = el;
-            }}
-            className="min-h-screen w-full flex items-center justify-center"
-          >
-            <div className="container mx-auto px-4 transform">
-              <Component />
-            </div>
-          </section>
-        ))}
-      </div>
+    <div className="flex flex-col">
+      {services?.map(({ Component, id }, index) => (
+        <section
+          key={id}
+          ref={(el) => {
+            sectionsRef.current[index] = el;
+          }}
+          className="h-screen w-full flex items-center justify-center"
+        >
+          <div className="container mx-auto px-4 h-full flex items-center">
+            <Component />
+          </div>
+        </section>
+      ))}
     </div>
+  </div>
   );
 }

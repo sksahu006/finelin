@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Menu, X, Film, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/50 h-16" : "bg-black/60 h-28"
+        isScrolled ? "bg-black/95 h-16" : "bg-black/80 h-28"
       }`}
     >
       <div
@@ -94,7 +95,12 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             <Film className="h-8 w-8 text-yellow-400" />
             <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold text-yellow-400">
-              FINELIN
+              <Image
+                src="/logo.png"
+                alt="Finelin Logo"
+                width={100}
+                height={100}
+              />
             </span>
           </Link>
 

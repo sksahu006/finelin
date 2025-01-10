@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Youtube, Twitter } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -9,7 +10,13 @@ export default function Footer() {
           {/* Logo and Social Links */}
           <div className="w-full md:w-[35%]">
             <Link href="/" className="text-yellow-400 text-2xl font-bold">
-              FINELIN
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={100}
+                height={100}
+                className="mb-4"
+              />
             </Link>
             <div className="flex space-x-4 mt-6">
               <Link href="#" className="text-white hover:text-yellow-400">

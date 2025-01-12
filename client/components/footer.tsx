@@ -22,7 +22,7 @@ export default function Footer() {
               <Link href="#" className="text-white hover:text-yellow-400">
                 <Facebook className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-white hover:text-yellow-400">
+              <Link href="https://www.instagram.com/_finelin_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-white hover:text-yellow-400">
                 <Instagram className="h-6 w-6" />
               </Link>
               <Link href="#" className="text-white hover:text-yellow-400">
@@ -43,9 +43,9 @@ export default function Footer() {
               ABOUT
             </h3>
             <p className="text-white text-sm leading-6 font-[200]">
-              ReDefine brings a fresh and dynamic approach to the art of Visual
+              Finelin brings a fresh and dynamic approach to the art of Visual
               Effects (VFX) and Animation for film, episodic and multiplatform
-              content. As part of the DNEG Group, ReDefine leverages an
+              content. As part of the DNEG Group, Finelin leverages an
               incredible legacy of creative and technical innovation to cater to
               projects that benefit from our agile, boutique approach. We design
               solutions that are tailored to the requirements of each show and

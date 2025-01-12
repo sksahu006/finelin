@@ -79,11 +79,11 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/95 h-16" : "bg-black/80 h-28"
+        isScrolled ? "bg-black/10 h-16" : "bg-black/10 h-28"
       }`}
     >
       <div
-        className={`md:max-w-5xl lg:max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 h-full transition-all duration-300 ${
+        className={`md:max-w-5xl lg:max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 h-full transition-all duration-500 ${
           isScrolled ? "py-2" : "py-4"
         }`}
       >
@@ -112,7 +112,7 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="flex justify-center items-center space-x-4">
+            <div className={`flex justify-center items-center transition-all duration-500 space-x-4 ${!isScrolled ? "gap-6": "gap-4"}`}>
               {navItems.map((item) => (
                 <div
                   key={item.name}
@@ -122,7 +122,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className="flex items-center hover:text-yellow-400 text-white text-sm md:text-md font-normal transition-colors duration-200 tracking-wider"
+                    className={`flex items-center hover:text-yellow-400 text-white text-sm md:text-md font-normal transition-all duration-500  tracking-wider`}
                   >
                     {item.name}
                     {item.dropdownItems && (
@@ -206,7 +206,7 @@ export default function Navbar() {
                     {item?.dropdownItems?.map((dropdownItem) => (
                       <Link
                         key={dropdownItem?.name}
-                        href={dropdownItem?.href} 
+                        href={dropdownItem?.href}
                         className="block px-3 py-2 text-sm text-white hover:text-yellow-400"
                         onClick={() => setIsOpen(false)}
                       >

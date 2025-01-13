@@ -22,7 +22,10 @@ export default function Footer() {
               <Link href="#" className="text-white hover:text-yellow-400">
                 <Facebook className="h-6 w-6" />
               </Link>
-              <Link href="https://www.instagram.com/_finelin_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-white hover:text-yellow-400">
+              <Link
+                href="https://www.instagram.com/_finelin_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                className="text-white hover:text-yellow-400"
+              >
                 <Instagram className="h-6 w-6" />
               </Link>
               <Link href="#" className="text-white hover:text-yellow-400">
@@ -32,7 +35,12 @@ export default function Footer() {
                 <Youtube className="h-6 w-6" />
               </Link>
               <Link href="#" className="text-white hover:text-yellow-400">
-                <Twitter className="h-6 w-6" />
+                <Image
+                  src="/twitter.png"
+                  alt="Twitter"
+                  width={20}
+                  height={20}
+                />
               </Link>
             </div>
           </div>
@@ -60,21 +68,21 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/vfx" className="text-white hover:text-yellow-400">
-                  VFX
+                <Link href="/" className="text-white hover:text-yellow-400">
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/animation"
+                  href="/services"
                   className="text-white hover:text-yellow-400"
                 >
-                  Animation
+                  Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/about-us"
                   className="text-white hover:text-yellow-400"
                 >
                   About Us
@@ -82,10 +90,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/careers"
+                  href="/portfolio"
                   className="text-white hover:text-yellow-400"
                 >
-                  Careers
+                  Portfolio
                 </Link>
               </li>
               <li>

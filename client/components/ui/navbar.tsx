@@ -74,7 +74,7 @@ export default function Navbar() {
       href: "/contact",
       dropdownItems: null,
     },
-  ];
+  ]; 
 
   return (
     <nav
@@ -93,7 +93,13 @@ export default function Navbar() {
           } justify-between h-full`}
         >
           <Link href="/" className="flex items-center">
-            <Film className="h-8 w-8 text-yellow-400" />
+            {/* <Film className="h-8 w-8 text-yellow-400" /> */}
+            <Image
+              src="/finelinlogo.png"
+              alt="Finelin Logo"
+              width={40}
+              height={40}
+            />
             <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold text-yellow-400">
               <Image
                 src="/logo.png"

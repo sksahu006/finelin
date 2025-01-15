@@ -44,12 +44,12 @@ const OurStorySection = () => {
         <div className="relative aspect-video">
           <div
             className=" absolute inset-0 flex justify-center items-center cursor-pointer"
-            onClick={() =>
-              window.open(
-                "https://www.youtube.com/watch?v=cUGOK7pHwJs",
-                "_blank"
-              )
-            }
+            // onClick={() =>
+            //   window.open(
+            //     "https://www.youtube.com/watch?v=cUGOK7pHwJs",
+            //     "_blank"
+            //   )
+            // }
           >
             <div className="absolute inset-0 bg-black opacity-40"></div>
             <div className="w-16 h-16 rounded-full bg-yellow-500 flex justify-center items-center text-black">
@@ -70,7 +70,7 @@ const OurStorySection = () => {
             </div>
           </div>
           <img
-            src="https://redefine.co/wp-content/uploads/2022/11/CultureFilm1.jpg"
+            src="about.png"
             alt="video"
             className="w-full h-full object-cover  custom-shadow"
           />

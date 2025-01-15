@@ -115,7 +115,7 @@ const ContactForm: React.FC = () => {
               href="tel:+918269528424"
               className="hover:text-yellow-500 transition-colors"
             >
-              +91-9692429955
+              +91-7310978387
             </a>
           </div>
 
@@ -141,7 +141,7 @@ const ContactForm: React.FC = () => {
               />
             </svg>
             <address className="not-italic hover:text-yellow-500 transition-colors">
-              Berhampur, Odisha , ZIP-760001
+            Hyderabad, Telangana, India
             </address>
           </div>
         </div>

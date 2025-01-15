@@ -3,10 +3,13 @@ import { AnimatePresence, motion } from "motion/react";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import { Cursor } from "../ui/cursor";
+import { useRouter } from "next/navigation";
 
 export default function VisulaService() {
   const [isHovering, setIsHovering] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const router = useRouter();
 
   const handlePositionChange = (x: number, y: number) => {
     if (buttonRef.current) {
@@ -19,7 +22,7 @@ export default function VisulaService() {
 
   return (
     <div className="relative flex flex-col md:flex-row-reverse justify-between items-center gap-6 my-6">
-       <Cursor
+      <Cursor
         attachToParent
         variants={{
           initial: { scale: 0.3, opacity: 0 },
@@ -71,8 +74,10 @@ export default function VisulaService() {
         </p>
         {/* move the button to the end of the container vertically */}
         <button
-        ref={buttonRef}
-        className="mt-5 bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-colors ">
+          onClick={() => router.push("/contact")}
+          ref={buttonRef}
+          className="mt-5 bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-colors "
+        >
           Book A Slot
         </button>
       </div>

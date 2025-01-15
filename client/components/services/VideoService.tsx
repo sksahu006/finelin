@@ -3,11 +3,12 @@ import { AnimatePresence, motion } from "motion/react";
 import { Mail } from "lucide-react";
 import Image from "next/image";
 import { Cursor } from "../ui/cursor";
+import { useRouter } from "next/navigation";
 
 export default function VideoService() {
   const [isHovering, setIsHovering] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
-
+  const router = useRouter();
   const handlePositionChange = (x: number, y: number) => {
     if (buttonRef.current) {
       const rect = buttonRef.current.getBoundingClientRect();
@@ -75,6 +76,7 @@ export default function VideoService() {
           Music, Travel, YouTube, Podcast, Short Films & Many more
         </p>
         <button
+          onClick={() => router.push("/contact")}
           ref={buttonRef}
           className="mt-5 bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-colors"
         >

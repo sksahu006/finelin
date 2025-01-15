@@ -20,8 +20,8 @@ export default function AboutUs() {
   return (
     <div>
       <OurStorySection />
-      {/* <VisionValue />
-      <OurTeam /> */}
+       <VisionValue />
+      {/*<OurTeam /> */}
     </div>
   );
 }

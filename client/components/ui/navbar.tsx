@@ -44,30 +44,30 @@ export default function Navbar() {
     {
       name: "SERVICES",
       href: "/services",
-      dropdownItems: [
-        { name: "Graphic", href: "/services#graphic" },
-        { name: "Video", href: "/services#video" },
-        { name: "3D", href: "/services#3d" },
-        { name: "VFX", href: "/services#vfx" },
-      ],
+      // dropdownItems: [
+      //   { name: "Graphic", href: "/services#graphic" },
+      //   { name: "Video", href: "/services#video" },
+      //   { name: "3D", href: "/services#3d" },
+      //   { name: "VFX", href: "/services#vfx" },
+      // ],
     },
     {
       name: "PORTFOLIO",
       href: "/portfolio",
-      dropdownItems: [
-        { name: "Video Editing", href: "/portfolio#video-editing" },
-        { name: "Graphic Design", href: "/portfolio#graphic-design" },
-        { name: "VFX", href: "/portfolio#vfx" },
-      ],
+      // dropdownItems: [
+      //   { name: "Video Editing", href: "/portfolio#video-editing" },
+      //   { name: "Graphic Design", href: "/portfolio#graphic-design" },
+      //   { name: "VFX", href: "/portfolio#vfx" },
+      // ],
     },
     {
       name: "ABOUT US",
       href: "/about-us",
-      dropdownItems: [
-        { name: "Our Story", href: "/about-us#our-story" },
-        { name: "Vision & Values", href: "/about-us#vision" },
-        { name: "Team", href: "/about-us#team" },
-      ],
+      // dropdownItems: [
+      //   { name: "Our Story", href: "/about-us#our-story" },
+      //   { name: "Vision & Values", href: "/about-us#vision" },
+      //   { name: "Team", href: "/about-us#team" },
+      // ],
     },
     {
       name: "CONTACT",
@@ -79,7 +79,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/10 h-16" : "bg-black/10 h-28"
+        isScrolled ? "bg-black h-16" : "bg-black h-28"
       }`}
     >
       <div
@@ -100,14 +100,14 @@ export default function Navbar() {
               width={40}
               height={40}
             />
-            <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold text-yellow-400">
+            {/* <span className="ml-2 text-lg md:text-xl lg:text-2xl font-bold text-yellow-400">
               <Image
                 src="/logo.png"
                 alt="Finelin Logo"
                 width={100}
                 height={100}
               />
-            </span>
+            </span> */}
           </Link>
 
           <div
@@ -140,7 +140,7 @@ export default function Navbar() {
                   </Link>
 
                   {/* Desktop Dropdown */}
-                  {item.dropdownItems && (
+                  {/* {item.dropdownItems && (
                     <div
                       className={`absolute left-0 mt-2 w-48 bg-black/95 rounded-md shadow-lg transition-all duration-200 ${
                         activeDropdown === item.name
@@ -160,7 +160,7 @@ export default function Navbar() {
                         ))}
                       </div>
                     </div>
-                  )}
+                  )} */}
                 </div>
               ))}
             </div>
@@ -196,18 +196,19 @@ export default function Navbar() {
                   }
                   className="w-full text-left px-3 py-2 text-white hover:text-yellow-400 transition-colors duration-200 flex items-center justify-between"
                 >
-                  {item?.name}
-                  {item?.dropdownItems && (
+                  <Link href={item.href}>{item.name}</Link>
+                  {/* {item?.name} */}
+                  {/* {item?.dropdownItems && (
                     <ChevronDown
                       className={`h-4 w-4 transition-transform duration-200 ${
                         activeDropdown === item?.name ? "rotate-180" : ""
                       }`}
                     />
-                  )}
+                  )} */}
                 </button>
 
                 {/* Mobile Dropdown */}
-                {item?.dropdownItems && activeDropdown === item?.name && (
+                {/* {item?.dropdownItems && activeDropdown === item?.name && (
                   <div className="bg-gray-900/50 pl-6">
                     {item?.dropdownItems?.map((dropdownItem) => (
                       <Link
@@ -220,7 +221,7 @@ export default function Navbar() {
                       </Link>
                     ))}
                   </div>
-                )}
+                )} */}
               </div>
             ))}
           </div>

@@ -23,7 +23,7 @@ export default function HeroSection() {
         className="absolute top-0 left-0 w-full h-full object-cover"
         poster="/video-poster.jpg"
       >
-        <source src="https://res.cloudinary.com/dprc07xle/video/upload/v1735397401/xv4garibmjrbzqtz7kkb.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dolaacjcb/video/upload/v1737100485/work_2_1_hq5rhu.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}

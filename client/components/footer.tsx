@@ -28,13 +28,13 @@ export default function Footer() {
               >
                 <Instagram className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-white hover:text-yellow-400">
+              <Link href="https://www.linkedin.com/company/finelin/about/" className="text-white hover:text-yellow-400">
                 <Linkedin className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-white hover:text-yellow-400">
+              <Link href="https://www.youtube.com/@FineLIN-d9h" className="text-white hover:text-yellow-400">
                 <Youtube className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-white hover:text-yellow-400">
+              <Link href="https://x.com/_finelin" className="text-white hover:text-yellow-400">
                 <Image
                   src="/twitter.png"
                   alt="Twitter"
